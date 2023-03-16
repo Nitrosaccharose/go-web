@@ -1,14 +1,9 @@
 # Govo
-**基于 go-zero + Vue 为主体的微服务全栈Web项目**
+**基于 gin + gorm + MySQL 为主体的全栈Web项目**
 ## 技术选型（暂定）
-- Golang
+- Go
 - gin
-- Nginx
-- Docker
-- Kubernetes
-- Vue
-- Vite
+- gorm
 - MySQL
-- Redis
 - ...
 
