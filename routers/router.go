@@ -11,6 +11,7 @@ func InitGinRouter() *gin.Engine {
 	return router
 }
 func CollectRouter(router *gin.Engine) {
+	router.GET("/api/auth/user/get/all", controller.GETUserAll)
 	router.GET("/api/auth/user/get/username", controller.GETUserByUserName)
 	router.GET("/api/auth/user/get/useraccount", controller.GETUserByUserAccount)
 	router.POST("/api/auth/user/post", controller.POSTUser)

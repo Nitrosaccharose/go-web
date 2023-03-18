@@ -7,6 +7,17 @@ import (
 	"net/http"
 )
 
+func GETUserAll(c *gin.Context) {
+	db := sql.GetDB()
+	var users []model.User
+	db.Find(&users)
+	c.JSON(http.StatusOK, gin.H{
+		"msg":  "Success",
+		"data": users,
+		"code": http.StatusOK,
+	})
+}
+
 func GETUserByUserName(c *gin.Context) {
 	userName := c.Query("user_name")
 	db := sql.GetDB()
