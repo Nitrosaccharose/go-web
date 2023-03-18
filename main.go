@@ -1,19 +1,18 @@
 package main
 
 import (
-	"go-web/model"
+	"go-web/redis"
 	"go-web/routers"
 	"go-web/sql"
 )
 
 func main() {
 
-	db := sql.ConnectDB()
+	_ = sql.ConnectDB()
 
-	// ------ 自动迁移model ------
-	_ = db.AutoMigrate(&model.User{})
+	_ = redis.ConnectRedis()
 
 	ginRouter := routers.InitGinRouter()
-	_ = ginRouter.Run(":8080")
+	ginRouter.Run(":8080")
 
 }

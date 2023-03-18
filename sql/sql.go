@@ -1,6 +1,7 @@
 package sql
 
 import (
+	"go-web/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
@@ -17,12 +18,19 @@ func ConnectDB() *gorm.DB {
 			SingularTable: true,
 		},
 	})
+
 	sqlDB, _ := db.DB()
 	sqlDB.SetMaxIdleConns(10)
 	sqlDB.SetMaxOpenConns(100)
 	sqlDB.SetConnMaxLifetime(10 * time.Second)
 
+	setAutoMigrate(db)
+
 	return db
+}
+
+func setAutoMigrate(db *gorm.DB) {
+	_ = db.AutoMigrate(&model.User{})
 }
 
 func GetDB() *gorm.DB {
