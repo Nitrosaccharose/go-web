@@ -5,5 +5,9 @@
 - gin
 - gorm
 - MySQL
+- Vite
+- Vue
+- Vue-router
+- Axios
 - ...
 

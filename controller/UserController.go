@@ -60,7 +60,7 @@ func GETUserByUserAccount(c *gin.Context) {
 }
 
 func POSTUser(c *gin.Context) {
-	var dataUser []model.User
+	var dataUser model.User
 	err := c.ShouldBindJSON(&dataUser)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
