@@ -29,6 +29,6 @@ func CollectRouter(router *gin.Engine) {
 	router.PUT("/api/auth/user/put", controller.PUTUser)
 	router.DELETE("/api/auth/user/delete", controller.DELETEUser)
 
-	router.GET("/api/auth/kv/get/key", controller.GETKVTByKey)
-	router.POST("/api/auth/kv/post", controller.POSTKVT)
+	router.GET("/api/auth/kvt/get/key", controller.GETKVTByKey)
+	router.POST("/api/auth/kvt/post", controller.POSTKVT)
 }
