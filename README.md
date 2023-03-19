@@ -20,7 +20,12 @@
     <img  src="/img/img3.png" height="45%" width="45%"/>
     <img  src="/img/img4.png" height="45%" width="45%"/>
 </div>
-
+<div align=center>
+    <img  src="/img/g1.gif" height="70%" width="70%"/>
+</div>
+<div align=center>
+    <img  src="/img/g2.gif" height="70%" width="70%"/>
+</div>
 
 ## 🧭 项目简介
 本项目是Go语言实现GoWeb应用的一个练手项目，项目采用前后端分离的形式来实现。项目实现了User类的CRUD，可与MySQL进行数据通信。实现了KVTObject类，可与Redis进行数据通信。
