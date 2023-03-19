@@ -2,9 +2,9 @@
     Govo
 </h1>
 
-<p align="center">
-  基于 gin + gorm + MySQL 为主体的全栈Web项目
-</p>
+<div align="center">
+  基于gin + Vue + Redis + Docker + MySQL的入门 GoWeb 应用
+</div>
  <br/>
  <br/>
 <p align="center">
