@@ -8,7 +8,7 @@
  <br/>
  <br/>
 <p align="center">
-  <a href="https://github.com/Nitrosaccharose/QT-Learning-Guide/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Nitrosaccharose/QT-Learning-Guide" alt="License"></a>
+  <a href="https://github.com/Nitrosaccharose/go-web/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Nitrosaccharose/go-web" alt="License"></a>
   <br/>
   本教程使用AGPL-3.0开源协议
 <p/>
